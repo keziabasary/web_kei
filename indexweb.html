@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.Css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.Css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="beranda">
+    <h2>Selamat Datang di Website saya</h2>
+    <p>KeiManiezz</p>
+  </section>
+   
+  <div class="container"> 
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <table class="table">
+      <thead>
+        <tr align="left">
+          <th scope="col">FOTO</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+                  <td rowspan="100" align="left"><img src="ftppmt.jpg" width="350" height="500"></td>
+                  <td>NAMA</td>
+                  <td>: Kezia Aurelia W Basary</td>
+                </tr>
+                <tr>
+                  <td>NIM</td>
+                  <td>: 163 23 081</td>
+                </tr>
+                <tr>
+                  <td>JURUSAN</td>
+                  <td>:MANAJEMEN INFORMATIKA</td>
+                </tr>
+                <tr>
+                  <td>KELAS</td>
+                  <td>: 1C</td>
+                </tr>
+                <tr>
+                  <td>KAMPUS</td>
+                  <td>: POLITEKNIK NEGERI FAKFAK</td>
+                </tr>
+                <tr>
+                  <td>ASAL SMA</td>
+                  <td>: SMA St Don Bosco FakFak</td>
+                </tr>
+                <tr>
+                  <td>JENIS KELAMIN</td>
+                  <td>: WANITA</td>
+                </tr>
+                <tr>
+                  <td>TTL</td>
+                  <td>: FakFak, 31 Januari 2006</td>
+                </tr>
+                <tr>
+                  <td>TINGGI BADAN/BERAT BADAN</td>
+                  <td>: 159cm/55kg</td>
+                </tr>
+                <tr>
+                  <td>NAMA AYAH</td>
+                  <td>: Karel M Basary</td>
+                </tr>
+                <tr>
+                  <td>NAMA IBU</td>
+                  <td>: Magdalena Jaflean</td>
+                </tr>
+                <tr>
+                  <td>ALAMAT</td>
+                  <td>:Kamp Lusiperi, RT04</td>
+                </tr>
+                <tr>
+                  <td>STATUS</td>
+                  <td>: MAHASISWI</td>
+                </tr>
+                <tr>
+                  <td>NO HP</td>
+                  <td>: 082399122811</td>
+                </tr>
+                <tr>
+                  <td>GMAIL</td>
+                  <td>: keziabasary@gmail.com</td>
+                </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="ssstik.io_1722259667994.mp3"></audio> <br>
+    <video controls autoplay src="videstetik.mp4" width="800" height="300"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang saya</h2>
+    <p align="left" >hallo, perkenalkan nama Saya
+        Kezia Aurelia W Basary biasa dipanggil kekez/kei 
+        sekarang saya berstatus sebagai mahasiswi aktif
+        di Politeknik Negeri Fakfak. 
+        Hobi saya rebahan dan scroll tiktok hehehe
+        saya orangnya sensitif dan pemarah
+    </p> 
+  </section>
+
+  <footer>
+    <p>&copy; 2024 KEIMANIEZZ</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
